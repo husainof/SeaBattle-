@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+body{
+	height: 100%;
+	margin: 0;
+}
+h1{
+	font-family: "Noto Sans";
+	text-align: center;
+}
+h2{
+	font-family: "Noto Sans";
+}
+h3{
+	font-family: "Noto Sans";
+	margin: 0 10px 10px 10px;
+}
+button{
+	font-family: "Noto Sans";
+	font-size: 16px;
+	display: block;
+	height: 64px;
+	width: 100%;
+	border-radius: 16px;
+	border-color: rgb(200, 200, 200);
+	background-color: rgb(235, 235, 235);
+	margin-bottom: 10px;
+}
+a{
+	text-decoration: none;
+}
+p{
+	font-family: "Noto Sans";
+	font-size: 16px;
+	margin: 0 10px 10px 10px;
+}
+
+.pic
+{
+	margin: 0 10px 10px 10px;
+}
+
+.wrapper{
+	border:2px outset rgb(200, 200, 200);
+	box-shadow: 12px 12px 2px 1px rgba(200, 200, 200, .2);
+	padding: 0 10px 10px 10px;
+	display: block;
+	border-radius: 16px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 200px;	
+	text-align: center;
+	width: 400px;
+}
+.inner_wrapper{
+	display: inline-block;
+	width: 100%;
+	text-align: center;
+}
+.developers{
+	font-family: "Noto Sans";
+	font-size: 16px;
+	margin-top: 100px;
+}
+.system{
+	margin: 0 0 10px 10px;
+	box-shadow: 6px 6px 2px 1px rgba(200, 200, 200, .2);
+	padding: 10px 10px 10px 10px;
+}
+
+.btn-up {
+  /* фиксированное позиционирование */
+  position: fixed;
+  /* цвет фона */
+  background-color: #673ab7;
+  /* расстояние от правого края окна браузера */
+  right: 20px;
+  /* расстояние от нижнего края окна браузера */
+  bottom: 0;
+  /* скругление верхнего левого угла */
+  border-top-left-radius: 8px;
+  /* скругление верхнего правого угла */
+  border-top-right-radius: 8px;
+  /* вид курсора */
+  cursor: pointer;
+  /* отображение элемента как flex */
+  display: flex;
+  /* выравниваем элементы внутри элемента по центру вдоль поперечной оси */
+  align-items: center;
+  /* выравниваем элементы внутри элемента по центру вдоль главной оси */
+  justify-content: center;
+  /* ширина элемента */
+  width: 60px;
+  /* высота элемента */
+  height: 50px;
+}
+
+.btn-up::before {
+  content: "";
+  width: 40px;
+  height: 40px;
+  background: transparent no-repeat center center;
+  background-size: 100% 100%;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%23fff' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z'/%3E%3C/svg%3E");
+}
+
+.btn-up_hide {
+  display: none;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .btn-up:hover {
+    background-color: #512da8; /* цвет заднего фона при наведении */
+  }
+}
